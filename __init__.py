@@ -91,7 +91,7 @@ def uncompress_file(p_f_name):
 
 
 if __name__ == '__main__':
-    file_name = '/Users/adrianowalmeida/Documents/Box Sync/Box Sync/DSR/Machine Learning/Kaggle/CIFAR/train.7z'
+    file_name = '~/Machine Learning/Kaggle/CIFAR/train.7z'
     f_info = get_files_info(file_name)
     raw_data = uncompress_file(file_name)
     data = get_files_array(f_info, raw_data)
