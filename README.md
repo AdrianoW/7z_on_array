@@ -24,7 +24,7 @@ Using this library, it took 1 minute.
 [http://superuser.com/questions/548349/how-can-i-install-7zip-so-i-can-run-it-from-terminal-on-os-x](how to intall 7zip)
 
 ### How to use
-Just copy the directory to the same directory where yout original code is.
+Just copy the directory to the same directory where your original code is.
 
 Then:
 ```
@@ -34,4 +34,4 @@ Then:
     f_info = get_files_info(file_name)
     raw_data = uncompress_file(file_name)
     data = get_files_array(f_info, raw_data)
-´´´
+```
