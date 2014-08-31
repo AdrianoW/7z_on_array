@@ -15,13 +15,18 @@ On the first test, if I had to decompress and read each file, it would take 2 ho
 Using this library, it took 1 minute.
 
 
+### Requirements
+7zip bash tool. If you have Anaconda installed, you will have already numpy and pil
+[http://superuser.com/questions/548349/how-can-i-install-7zip-so-i-can-run-it-from-terminal-on-os-x](how to intall 7zip)
+
+
 ### references and places to find help
 
 [http://stackoverflow.com/questions/646286/python-pil-how-to-write-png-image-to-string](Stack post)
 [https://docs.python.org/2/library/stringio.html](String io)
 [http://stackoverflow.com/questions/11552926/how-to-read-raw-png-from-an-array-in-python-opencv/17547525#17547525](Open cv and raw image)
 [http://stackoverflow.com/questions/25186591/having-cv2-imread-reading-images-from-file-objects-or-memory-stream-like-data-h](Memory strings as files)
-[http://superuser.com/questions/548349/how-can-i-install-7zip-so-i-can-run-it-from-terminal-on-os-x](how to intall 7zip)
+
 
 ### How to use
 Just copy the directory to the same directory where yout original code is.

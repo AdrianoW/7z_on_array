@@ -57,7 +57,7 @@ def get_files_array(p_f_list, p_f_data):
     :param p_f_data: byte stream
     :return: array of arrays with data.
     """
-    # beginning and end of each file
+    # begin and end of each file
     low = 0
     up = 0
     images = [0] *len(p_f_list)
@@ -72,7 +72,6 @@ def get_files_array(p_f_list, p_f_data):
         # Convert rawImage to Mat
         pil_image = Image.open(StringIO(raw_img))
         np_image = np.array(pil_image)
-        ##np_image = pp.(pil_image)
         images[i] = np_image
 
     return images
@@ -95,27 +94,3 @@ if __name__ == '__main__':
     f_info = get_files_info(file_name)
     raw_data = uncompress_file(file_name)
     data = get_files_array(f_info, raw_data)
-
-# # get file info inside zip
-# p = subprocess.Popen(["7z", "l", "awa.7z"],
-#                      stdout=subprocess.PIPE).communicate()[0]
-# # uncompress all files
-# p = subprocess.Popen(["7z", "e", "-so", "awa.7z"],
-#                      stdout=subprocess.PIPE).communicate()[0]
-#
-# ## separate them individually
-# f1 = p[0:2106]
-#
-#
-# # Convert rawImage to Mat
-# pilImage = Image.open(StringIO(rawImage));
-# npImage = np.array(pilImage)
-# matImage = cv.fromarray(npImage)
-#
-# # return one array with all images
-# from skimage.io._plugins.pil_plugin import pil_to_ndarray
-#
-# def roundtrip_pil_image(self, x):
-#         pil_image = ndarray_to_pil(x)
-#         y = pil_to_ndarray(pil_image)
-#         return y
